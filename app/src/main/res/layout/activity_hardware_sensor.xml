@@ -5,37 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".HardwareSensorActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Android Hardware"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-  
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="Sensor"
-        android:onClick="clickToSensor"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
         />
     <Button
-        android:id="@+id/btnCamera"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Camera"
-        android:onClick="clickToCamera"/>
+        android:text="List All Sensors"
+        android:onClick="clickToListSensor"
+        />
     <Button
-        android:id="@+id/btnCameraAPI"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Camera API"
-        android:onClick="clickToCameraAPI"/>
+        android:text="Barometer Sensor"
+        android:onClick="clickToBarometer"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compass Sensor"
+        android:onClick="clickToCompass"
+        />
 
 </LinearLayout>

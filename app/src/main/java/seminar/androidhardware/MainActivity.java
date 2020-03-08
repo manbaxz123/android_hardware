@@ -14,6 +14,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void clickToSensor(View view) {
+        Intent intent = new Intent(this, HardwareSensorActivity.class);
+
     public void clickToCamera(View view) {
         Intent intent = new Intent(this, MyCameraActivity.class);
         startActivity(intent);
