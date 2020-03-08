@@ -38,4 +38,10 @@
         android:text="Camera API"
         android:onClick="clickToCameraAPI"/>
 
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBluetooth"
+        android:text="Bluetooth"
+        android:onClick="clickToBluetooth"/>
 </LinearLayout>

@@ -27,4 +27,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MyCameraAPIActivity.class);
         startActivity(intent);
     }
+    public void clickToBluetooth (View view ) {
+        Intent intent = new Intent(this, MyBluetoothActivity.class);
+        startActivity(intent);
+    }
 }
