@@ -16,6 +16,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickToSensor(View view) {
         Intent intent = new Intent(this, HardwareSensorActivity.class);
+
+    public void clickToCamera(View view) {
+        Intent intent = new Intent(this, MyCameraActivity.class);
+        startActivity(intent);
+    }
+
+    public void clickToCameraAPI(View view) {
+        Intent intent = new Intent(this, MyCameraAPIActivity.class);
         startActivity(intent);
     }
 }
