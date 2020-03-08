@@ -46,6 +46,7 @@ public class MyCameraActivity extends AppCompatActivity {
         File sdCard = Environment.getExternalStorageDirectory();
         String realPath = sdCard.getAbsolutePath();
         File directory = new File(realPath + "/MyFiles");
+        directory.mkdir();
         File file = new File(directory, outputFileName);
 
         outputFileUri = Uri.fromFile(file);
@@ -98,10 +99,11 @@ public class MyCameraActivity extends AppCompatActivity {
                 Toast.makeText(this, "File has already stored!", Toast.LENGTH_SHORT).show();
                 imgPresent.setImageBitmap(bitmap);
             }
-        } else if (requestCode == CAMERA_VIDEO_REQUEST) {
-            Log.d("ddd", "abc");
-            videoPresent.setVideoPath(outputFileUri.getPath());
-            videoPresent.start();
         }
+//        else if (requestCode == CAMERA_VIDEO_REQUEST) {
+//            Log.d("ddd", "abc");
+//            videoPresent.setVideoPath(outputFileUri.getPath());
+//            videoPresent.start();
+//        }
     }
 }

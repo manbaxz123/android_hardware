@@ -15,6 +15,12 @@
         android:textStyle="bold"
         android:gravity="center" />
     <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:onClick="clickToCamera"/>
+    <Button
         android:id="@+id/btnCameraAPI"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
