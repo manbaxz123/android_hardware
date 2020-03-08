@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="seminar.androidhardware">
 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -16,15 +18,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-      
-        <activity android:name=".CompassSensorActivity"></activity>
+        <activity android:name=".MyBluetoothActivity"></activity>
+        <activity android:name=".CompassSensorActivity" />
         <activity android:name=".BarometerSensorActivity" />
         <activity android:name=".ListSensorActivity" />
         <activity android:name=".HardwareSensorActivity" />
-  
-        <activity android:name=".MyCameraAPIActivity"></activity>
+        <activity android:name=".MyCameraAPIActivity" />
         <activity android:name=".MyCameraActivity" />
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
