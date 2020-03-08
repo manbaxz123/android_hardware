@@ -5,26 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
+    tools:context=".BarometerSensorActivity">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Android Hardware"
-        android:textStyle="bold"
-        android:textSize="20dp"
+        android:text="Barometer Sensor"
         android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/txtValue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sensor"
-        android:onClick="clickToSensor"
+        android:gravity="center"
+        android:text="Laarge Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         />
-
-
 </LinearLayout>
